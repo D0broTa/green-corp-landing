@@ -62,6 +62,7 @@ button:hover {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    animation: hi__animation 2s;
  }
 .about h1 {
     font-size: 70px;
@@ -186,6 +187,11 @@ footer h3 {
 @keyframes rotation {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
+}
+
+@keyframes hi__animation {
+  from {transform: opacity: 0;}
+  to {transform: opasity: 1;}
 }
 /*Мобильные устройства*/
 @media (min-width: 320px)
