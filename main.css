@@ -98,7 +98,7 @@ button:hover {
 }
 .card h3 {
   font-size: 16px;
-  opacity: 0,8;
+  opacity: 0.8;
   line-height: 22px;
 }
 .card__logo {
@@ -127,7 +127,6 @@ justify-content: space-around;
 }
 .features__feedback {
   display: flex;
-  flex-direction: row;
 }
 .features__feedback-left {
   margin-right: 10px;
@@ -142,8 +141,7 @@ justify-content: space-around;
 }
 .features__feedback-right {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  align-items: center;
 }
 .features__box {
   padding: 30px 40px 25px 40px;
@@ -151,22 +149,75 @@ justify-content: space-around;
   border-radius: 25px;
 }
 .features__box h3 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 48px;
 }
 .features__savings-box {
   background-color: #dc5e26;
-  box-shadow: 0px 6px rgb(221 95 38 / 20%);
+  box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
   margin-right: 30px;
 }
 .features__rate-box {
   background-color: #1D263A;
-  box-shadow: 0px 6px rgb(29 38 58 / 20%);
+  box-shadow: 0px 6px 0 rgb(29 38 58 / 20%);
 }
 .stars {
   color: #ff7039;
 }
+/*Промо*/
+.promo {
+  display: flex;
+}
+.promo__image {
+  background-image: url('img/promo.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  width: 50%;
+}
+.promo__right {
+  background-color: #dd5f26;
+  padding: 160px 60px 160px 60px;
+}
+.promo__right__card {
+  background-color: white;
+  padding: 30px 40px 30px 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+.promo__right__card p::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ec6b29;
+  margin-right: 10px;
+}
+.promo__right__card p {
+  opacity: 0.8;
+}
+
+.promo__right__card button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 15px 30px 15px 30px;
+  font-family: 600;
+  box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+}
+.promo__right__card button i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.promo__right__card__button {
+  display: flex;
+  justify-content: center;
+}
+/*Форма для заполнения*/
 .form__container {
   width: 550px;
 }
@@ -309,12 +360,9 @@ header a {
     padding: 50px 10px;
 }
 .cards {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 50px;
+  grid-template-columns: auto;
 }
 .features__feedback {
-  display: flex;
   flex-direction: column;
 }
 .features__feedback-left {
@@ -324,9 +372,8 @@ header a {
   font-size: 36px;
 }
 .features__feedback-right {
-  display: flex;
   flex-direction: column;
-  align-items: stretch;
+    align-items: initial;
 }
 .features__box h3 {
     font-size: 36px;
@@ -334,6 +381,16 @@ header a {
 .features__savings-box {
     margin-right: 0px;
     margin-bottom: 30px;
+}
+.promo {
+  flex-direction: column-reverse;
+}
+.promo__image {
+  width: 100%;
+  height: 500px;
+}
+.promo__right {
+  padding: 50px 10px 50px 10px;
 }
 .form {
     padding: 50px 10px;
