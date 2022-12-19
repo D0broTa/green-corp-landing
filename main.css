@@ -63,6 +63,13 @@ button:hover {
     background-position: center;
     background-size: cover;
     animation: hi__animation 2s;
+    position: relative;
+ }
+ .orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
  }
 .about h1 {
     font-size: 70px;
